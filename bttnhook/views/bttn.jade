@@ -1,0 +1,46 @@
+extends layout
+
+block content
+  h1= title
+  p What's happening with my bt.tn
+
+  // Wrapper
+  #wrapper
+
+    // EVENT INFO
+    #eventInfo
+      h2 Event Details
+      p
+        strong ID:
+        |  <span id='eventbttnId'></span>
+        br
+        strong Name:
+        |  <span id='eventbttnName'></span>
+        br
+        strong User:
+        |  <span id='eventUser'></span>
+        br
+        strong Date:
+        |  <span id='eventDate'></span>
+        br
+        strong Time
+        |  <span id='eventTime'></span>
+        br
+        strong Location:
+        |  <span id='eventLocation'></span>
+    // /EVENT INFO
+
+    // EVENT LIST
+    h2 bt.tn Events
+    #eventList
+      table
+        thead
+          th bt.tn Name
+          th bt.tn User
+          th Date
+          th Time
+        tbody
+    // /EVENT LIST
+
+  // /WRAPPER
+
